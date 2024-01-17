@@ -10,11 +10,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="external.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="mobile.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <title>My Portfolio</title>
-</head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="particles.css">
+    <title>Titan Natesan</title>
 
 <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <div id="particles-js"></div>
+
     <div id="loader-wrapper" class="wrapper">
         <div class="circle"></div>
         <div class="circle"></div>
@@ -23,62 +31,73 @@
         <div class="circle"></div>
         <!-- <div id="loader"></div> -->
     </div>
-    <video class="body-overlay" muted autoplay loop>
-        <source src="videos/video2.mp4" type="video/mp4">
-    </video>
     <div class="header">
         <div class="progress-container">
-          <div class="progress-bar" id="myBar"></div>
-        </div>  
-      </div>
-      
-    <div class="main-container-left-fixed ">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </div>
+
+    <div class="main-container-left-fixed" data-aos="fade-down" data-aos-duration="400">
         <div class="main-content-left-fixed">
-            <div class="top ">
-                <h1>Titan</h1>
-                <h6>FullStack Deveoper & <b>Prompt Engineer</b></h6>
+            <div class="top">
+                <h1 data-aos="fade-left" data-aos-duration="300" data-aos-delay="300">Titan</h1>
+                <h6 data-aos="fade-right" data-aos-duration="300" data-aos-delay="300">FullStack Developer & <b>Prompt
+                        Engineer</b></h6>
             </div>
-            <div class="between ">
-                <div class="card">
+            <div class="between">
+                <div class="card" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500">
                     <div class="glow"></div>
                 </div>
             </div>
+            <script>
+                function changeImg(img, id) {
+                    document.getElementById(id).src = img;
+                }
+            </script>
             <div class="bottom">
-                <div class="icons" onclick="gotopage('https://www.instagram.com/titan_natesan/')">
-                    <img src="icons/instagram.png" alt="instagram"/>
+                <div data-aos="flip-left" data-aos-duration="500" data-aos-delay="400">
+                    <div class="icons" onclick="gotopage('https://www.instagram.com/titan_natesan/')">
+                        <img id="InstaIcon" src="icons/Instagram.png" alt="instagram" />
+                    </div>
                 </div>
-                <div class="icons" onclick="gotopage('https://www.instagram.com/titan_natesan/')">
-                    <img src="icons/facebook.png" alt="facebook" />
+
+                <div data-aos="flip-left" data-aos-duration="500" data-aos-delay="600">
+                    <div class="icons" onclick="gotopage('https://www.instagram.com/titan_natesan/')">
+                        <img id="FaceIcon" src="icons/facebook.png" alt="facebook" />
+                    </div>
                 </div>
-                <div class="icons" onclick="gotopage('https://github.com/TitanNatesan/')">
-                    <img src="icons/github.png" alt="github" />
+                <div data-aos="flip-left" data-aos-duration="500" data-aos-delay="800">
+                    <div class="icons" onclick="gotopage('https://github.com/TitanNatesan/')">
+                        <img id="GitIcon" src="icons/github.png" alt="github" />
+                    </div>
                 </div>
-                <div class="icons" onclick="gotopage('https://www.linkedin.com/in/titan-natesan/')">
-                    <img src="icons/linkedin.png" alt="linkedIn" />
+                <div data-aos="flip-left" data-aos-duration="500" data-aos-delay="1000">
+                    <div class="icons" onclick="gotopage('https://www.linkedin.com/in/titan-natesan/')">
+                        <img id="LinkedIcon" src="icons/linkedin.png" alt="linkedIn" />
+                    </div>
                 </div>
-                <div class="icons" onclick="gotopage('https://wa.me/+916380615171')">
-                    <img src="icons/whatsapp.png" alt="whatsApp" />
+                <div data-aos="flip-left" data-aos-duration="500" data-aos-delay="1200">
+                    <div class="icons" onclick="gotopage('https://wa.me/+916380615171')">
+                        <img id="WhatsIcon" src="icons/whatsapp.png" alt="whatsApp" />
+                    </div>
                 </div>
             </div>
-            <div class="buton">DownLoad CV</div>
+            <div class="buton">Download CV</div>
         </div>
     </div>
-    <div class="r ">
-
-
+    
+    <div class="r">
         <div class="intro "> <!-- Introduction -->
             <div class="hair">Introduction</div>
-            <pre>I'm <b>Titan</b>
+            <pre data-aos="fade-up" data-aos-duration="500">I'm <b>Titan</b>
 Designer, FullStack
 and AI Developer</pre>
-            <p>I'm Titan <b>Natesan</b>, I always love what i do.
-                I'm dedicated of my work ever. Be addictive to the job</p>
+            <p id="tw">I'm Titan <b>Natesan</b></p>
         </div>
-
         <div class="about "> <!-- Abuot -->
             <div class="hair">About</div>
-            <pre>About <b>Me</b></pre>
-            <p><b>Hello</b> there, My name is <b>Natesan</b> alis Titan.
+            <pre data-aos="fade-up" data-aos-duration="500">About <b>Me</b></pre>
+            <p data-aos="fade-up" data-aos-duration="500"><b>Hello</b> there, My name is <b>Natesan</b> alis Titan.
                 I'm a Engineering student in <b>Karpagam</b> Academy of Higher Education and I'm
                 pursuing a <b>CSE</b> degree. Im very Curious of Computers and other Computer Technologies from my
                 childhood.
@@ -88,126 +107,119 @@ and AI Developer</pre>
                 always be Careful for my <b>Health</b>
             </p>
         </div>
-
         <div class="res "> <!-- Resume -->
             <div class="hair">Resume</div>
-            <pre>Education & <b>Experience</b></pre>
+            <pre data-aos="fade-down" data-aos-duration="500">Education & <b>
+Experience</b></pre>
             <div class="resume-timeline">
-                <div class="item">
+                <div class="item" data-aos="fade-up" data-aos-duration="500">
                     <span class="date">2020 - 2022</span>
                     <h2>High School</h2>
                     <p>Universal Matriculation Higher Secondary School</p>
                     <h2>Web Developer</h2>
                     <p>Freelance</p>
                 </div>
-                <div class="item">
+                <div class="item" data-aos="fade-up" data-aos-duration="500">
                     <span class="date">2022 - Present</span>
                     <h2>College</h2>
                     <p>Karpagam Academy of Higher Education</p>
-                    <h2>Founder & Developer</h2>
-                    <p>Ondrai Association</p>
                 </div>
             </div>
         </div>
-
         <div class="ser "> <!-- Abuot -->
             <div class="hair">Services</div>
-            <pre>My <b>Specializations</b></pre>
-            <div class="card">
+            <pre data-aos="fade-up" data-aos-duration="500">My <b>Specializations</b></pre>
+            <div class="card" data-aos="flip-down" data-aos-duration="1500">
                 <h2>Designing</h2>
                 <p>I create digital Designes and Layouts using Figma and Canva</p>
             </div>
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="1500">
                 <h2>Web Development</h2>
                 <p>I can make any website with a proper a Design/Layout</p>
             </div>
-            <div class="card">
+            <div class="card" data-aos="flip-right" data-aos-duration="1500">
                 <h2>AI Development</h2>
                 <p>I even make Classification AI models as well as Generative AI models</p>
             </div>
         </div>
-
         <div class="skill">
             <div class="hair">Skills</div>
-            <pre>Development <b>Skills</b></pre>
+            <pre data-aos="fade-up" data-aos-duration="500">Development <b>Skills</b></pre>
             <div class="cont">
-                <div class="icon">
+                <div class="icon" data-aos="fade-up-left" data-aos-duration="500">
                     <img src="icons/HTML.png">
                     <h2>HTML</h2>
                 </div>
-                <div class="icon">
+                <div class="icon" data-aos="fade-up" data-aos-duration="500">
                     <img src="icons/CSS.png">
                     <h2>CSS</h2>
                 </div>
-                <div class="icon">
+                <div class="icon" data-aos="fade-up-right" data-aos-duration="500">
                     <img src="icons/JS.png">
                     <h2>JS</h2>
                 </div>
-                <div class="icon">
+                <div class="icon" data-aos="fade-down-left" data-aos-duration="500">
                     <img src="icons/dj.png">
                     <h2>Django</h2>
                 </div>
-                <div class="icon">
+                <div class="icon" data-aos="fade-down" data-aos-duration="500">
                     <img src="icons/mongodb.png">
                     <h2>Mongo DB</h2>
                 </div>
-                <div class="icon">
+                <div class="icon" data-aos="fade-down-right" data-aos-duration="500">
                     <img src="icons/compose-removebg-preview.png">
                     <h2>Jetpack Compose</h2>
                 </div>
 
             </div>
 
-            <pre>AI <b>Skills</b></pre>
+            <pre data-aos="fade-up" data-aos-duration="500">AI <b>Skills</b></pre>
             <div class="cont">
-                <div class="icon">
+                <div class="icon" data-aos="fade-left" data-aos-duration="500">
                     <img src="icons/TF.png">
                     <h2>Tensorflow</h2>
                 </div>
-                <div class="icon">
+                <div class="icon" data-aos="zoom-in" data-aos-duration="500">
                     <img src="icons/pytorch.svg">
                     <h2>PyTorch</h2>
                 </div>
-                <div class="icon">
+                <div class="icon" data-aos="fade-right" data-aos-duration="500">
                     <img src="icons/opencv.svg">
                     <h2>OpenCV</h2>
                 </div>
             </div>
-
-            <pre>Collabration <b>Skills</b></pre>
+            <pre data-aos="fade-up" data-aos-duration="500">Collabration <b>Skills</b></pre>
             <div class="cont">
-                <div class="icon">
+                <div class="icon" data-aos="zoom-out" data-aos-duration="500">
                     <img src="icons/githubl.png">
                     <h2>GitHub</h2>
                 </div>
             </div>
         </div>
-
-        
         <div class="project">
             <div class="hair">Projects</div>
-            <pre>UI|UX<b> Projects</b></pre>
+            <pre data-aos="fade-up" data-aos-duration="500">UI|UX<b> Projects</b></pre>
             <div class="cont">
-                <div class="pro">
+                <div class="pro" data-aos="zoom-in" data-aos-duration="500">
                     <video muted autoplay loop>
                         <source src="videos/Dizop.mp4" type="">
                     </video>
                 </div>
-
             </div>
             <br><br><br><br><br>
         </div>
-
-        <div class="contact">      <!-- contact -->
+        <div class="contact"> <!-- contact -->
             <div class="hair">Contact</div>
-            <pre>Let's work<b> Together!</b></pre>
+            <pre data-aos="fade-up" data-aos-duration="500">Let's work<b> Together!</b></pre>
         </div>
-        <section class="contact-area page-section scroll-content" id="contact">
+        <section class="contact-area page-section scroll-content" id="contact" data-aos="fade-up"
+            data-aos-duration="500">
             <div class="custom-container">
                 <div class="contact-content content-width">
                     <p id="required-msg">* Marked fields are required to fill.</p>
 
-                    <form class="contact-form scroll-animation" data-animation="fade_from_bottom" method="POST" action="mailto:titannatesan@gmail.com" enctype="text/plain">
+                    <form class="contact-form scroll-animation" data-animation="fade_from_bottom" method="POST"
+                        action="mailto:titannatesan@gmail.com" enctype="text/plain">
                         <div class="alert alert-success messenger-box-contact__msg" style="display: none" role="alert">
                             Your message was sent successfully.
                         </div>
@@ -227,13 +239,15 @@ and AI Developer</pre>
                             <div class="col-md-6">
                                 <div class="input-group">
                                     <label for="phone-number">phone <span>(optional)</span></label>
-                                    <input type="text" name="phone-number" id="phone-number" placeholder="Your number phone">
+                                    <input type="text" name="phone-number" id="phone-number"
+                                        placeholder="Your number phone">
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="input-group">
                                     <label for="message">message</label>
-                                    <textarea name="message" id="message" placeholder="Wrire your message here ..."></textarea>
+                                    <textarea name="message" id="message"
+                                        placeholder="Wrire your message here ..."></textarea>
                                 </div>
                             </div>
                         </div>
@@ -243,10 +257,11 @@ and AI Developer</pre>
                 </div>
             </div>
         </section>
-        
-
     </div>
     <script src="main.js"></script>
+    <script src="app.js"></script>
+    <script src="particles.js"></script>
+
 </body>
 
 </html>

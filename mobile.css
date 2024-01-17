@@ -1,0 +1,160 @@
+@media only screen and (max-width: 600px) {
+    body {
+        flex-wrap: wrap;
+        overflow-x: hidden;
+    }
+
+    .main-container-left-fixed {
+        width: 100%;
+        margin: auto;
+        position: relative;
+    }
+
+    .main-content-left-fixed {
+        border-radius: 50px 0px;
+        height: 90%;
+    }
+
+    .main-content-left-fixed .top {
+        height: 15%;
+    }
+
+    .main-content-left-fixed .top h1 {
+        font-size: 280%;
+        padding-left: 4%;
+    }
+
+    .main-content-left-fixed .top h6 {
+        font-size: 90%;
+        width: 50%;
+        padding-right: 4%;
+    }
+
+    .main-content-left-fixed .between {
+        height: 60%;
+    }
+
+    .main-content-left-fixed .between .card {
+        width: 80%;
+        height: 90%;
+        border-radius: 15px;
+    }
+
+    .main-content-left-fixed .bottom {
+        width: 95%;
+        margin: auto;
+        height: 10%;
+    }
+
+    .main-content-left-fixed .bottom .icons {
+        width: 50px;
+        height: 50px;
+    }
+
+    .main-content-left-fixed .buton {
+        font-size: 150%;
+        letter-spacing: 3px;
+        width: 85%;
+        height: 55px;
+    }
+
+    .r {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .r .intro {
+        padding: 0;
+        margin: 0;
+        height: auto;
+    }
+
+    .hair {
+        margin-left: 5%;
+        font-size: small;
+    }
+
+    pre {
+        margin: auto;
+        line-height: 120%;
+        font-size: 220%;
+        margin: 6%;
+        text-align: left;
+    }
+
+    p {
+        text-align: left;
+        width: 90%;
+        margin: auto;
+        font-size: 14px;
+    }
+
+    .r .res .resume-timeline .item::after {
+        left: 5%;
+    }
+
+    .r .res .resume-timeline .item::before {
+        margin-left: 5%;
+    }
+
+    .r .res .resume-timeline .item h2 {
+        font-size: 16px;
+        font-weight: 800;
+        color: var(--priC);
+    }
+
+    .r .res .resume-timeline .item p {
+        margin-bottom: 10px;
+        margin-left: 0px;
+        font-weight: 100;
+    }
+
+
+    .r .ser {
+        margin: 10% auto;
+    }
+
+    .r .ser .card {
+        padding: 2% 8%;
+        border-radius: 10px;
+        margin: 5% auto;
+    }
+
+    .r .ser .card h2 {
+        width: 100%;
+        font-size: 150%;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    .r .ser .card p {
+        width: 100%;
+        font-size: 85%;
+    }
+
+    .r .skill .cont .icon {
+        width: 20vw;
+        height: 3vh;
+        margin: 20px 15px;
+    }
+
+    .r .skill .cont .icon:hover {
+        margin: 10px 5px;
+        padding: 0px 10px;
+    }
+
+    .r .skill .cont .icon:hover h2 {
+        font-size: 100%;
+    }
+
+    .r .project .cont .pro {
+        width: 85%;
+    }
+
+    /* 18 - Contact */
+    .contact-area {
+        padding-bottom: 50px;
+        margin: auto 5%;
+    }
+
+}

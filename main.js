@@ -67,3 +67,22 @@ function gotopage(url){
   
   window.location.href = url;
 }
+
+var i = 0;
+    var txt = ", I always love what i do. I'm dedicated of my work ever. Be addictive to the job";
+    var speed = 50;
+
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("tw").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+
+    // Trigger typeWriter when the page is loaded
+    window.onload = function () {
+      setTimeout(function () {
+        typeWriter();
+      }, 500); // 1000 milliseconds (1 second) delay
+    };
