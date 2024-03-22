@@ -151,10 +151,13 @@
         width: 85%;
     }
 
-    /* 18 - Contact */
     .contact-area {
         padding-bottom: 50px;
         margin: auto 5%;
+    }
+
+    .snavigate{
+        display: none;
     }
 
 }

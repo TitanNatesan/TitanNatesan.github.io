@@ -13,8 +13,15 @@
     <link rel="stylesheet" href="mobile.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="particles.css">
-    <title>Titan Natesan</title>
+    <title>Titan Natesan - Full Stack Developer and AI Enthusiast</title>
+    <meta name="description"
+        content="Welcome to the portfolio of Titan Natesan, a full stack developer, AI enthusiast, Python and Django developer, and founder of Ondrai Associations. Currently a dedicated student in the field of technology.">
+    <meta name="keywords"
+        content="Titan Natesan, Full Stack Developer, AI Enthusiast, Python Developer, Django Developer, Student, Ondrai Associations, Web Development">
+    <link rel="canonical" href="https://natesanportfolio.netlify.app/">
 
 <body>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -22,6 +29,27 @@
         AOS.init();
     </script>
     <div id="particles-js"></div>
+    
+    <div class="snavigate">
+        <a href="#intro"><span class="material-symbols-outlined">
+                home
+            </span></a>
+        <a href="#about"><span class="material-symbols-outlined">
+                person
+            </span></a>
+        <a href="#EduExp"><span class="material-symbols-outlined">
+                import_contacts
+            </span></a>
+        <a href="#service"><span class="material-symbols-outlined">
+                star
+            </span></a>
+        <a href="#skills"><span class="material-symbols-outlined">
+                work
+            </span></a>
+        <a href="#contact"><span class="material-symbols-outlined">
+                contacts
+            </span></a>
+    </div>
 
     <div id="loader-wrapper" class="wrapper">
         <div class="circle"></div>
@@ -44,8 +72,8 @@
                 <h6 data-aos="fade-right" data-aos-duration="300" data-aos-delay="300">FullStack Developer & <b>Prompt
                         Engineer</b></h6>
             </div>
-            <div class="between">
-                <div class="card" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500">
+            <div class="between" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500">
+                <div class="card">
                     <div class="glow"></div>
                 </div>
             </div>
@@ -85,16 +113,15 @@
             <div class="buton">Download CV</div>
         </div>
     </div>
-    
-    <div class="r">
-        <div class="intro "> <!-- Introduction -->
+
+    <div class="r" dir="ltr">
+        <div class="intro " id="intro"> <!-- Introduction -->
             <div class="hair">Introduction</div>
             <pre data-aos="fade-up" data-aos-duration="500">I'm <b>Titan</b>
 Designer, FullStack
 and AI Developer</pre>
             <p id="tw">I'm Titan <b>Natesan</b></p>
-        </div>
-        <div class="about "> <!-- Abuot -->
+        <div class="about " id="about"> <!-- Abuot -->
             <div class="hair">About</div>
             <pre data-aos="fade-up" data-aos-duration="500">About <b>Me</b></pre>
             <p data-aos="fade-up" data-aos-duration="500"><b>Hello</b> there, My name is <b>Natesan</b> alis Titan.
@@ -107,7 +134,7 @@ and AI Developer</pre>
                 always be Careful for my <b>Health</b>
             </p>
         </div>
-        <div class="res "> <!-- Resume -->
+        <div class="res " id="EduExp"> <!-- Resume -->
             <div class="hair">Resume</div>
             <pre data-aos="fade-down" data-aos-duration="500">Education & <b>
 Experience</b></pre>
@@ -126,18 +153,21 @@ Experience</b></pre>
                 </div>
             </div>
         </div>
-        <div class="ser "> <!-- Abuot -->
+        <div class="ser " id="service"> <!-- Abuot -->
             <div class="hair">Services</div>
             <pre data-aos="fade-up" data-aos-duration="500">My <b>Specializations</b></pre>
-            <div class="card" data-aos="flip-down" data-aos-duration="1500">
+            <div class="card" data-aos="flip-down" data-aos-duration="1000" data-aos-easing="ease-out"
+                data-aos-anchor-placement="center-bottom">
                 <h2>Designing</h2>
                 <p>I create digital Designes and Layouts using Figma and Canva</p>
             </div>
-            <div class="card" data-aos="flip-left" data-aos-duration="1500">
+            <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-easing="ease-out"
+                data-aos-anchor-placement="center-bottom">
                 <h2>Web Development</h2>
                 <p>I can make any website with a proper a Design/Layout</p>
             </div>
-            <div class="card" data-aos="flip-right" data-aos-duration="1500">
+            <div class="card" data-aos="flip-right" data-aos-duration="1000" data-aos-easing="ease-out"
+                data-aos-anchor-placement="center-bottom">
                 <h2>AI Development</h2>
                 <p>I even make Classification AI models as well as Generative AI models</p>
             </div>
@@ -196,7 +226,7 @@ Experience</b></pre>
                 </div>
             </div>
         </div>
-        <div class="project">
+        <div class="project" id="skills">
             <div class="hair">Projects</div>
             <pre data-aos="fade-up" data-aos-duration="500">UI|UX<b> Projects</b></pre>
             <div class="cont">
@@ -208,7 +238,7 @@ Experience</b></pre>
             </div>
             <br><br><br><br><br>
         </div>
-        <div class="contact"> <!-- contact -->
+        <div class="contact" id="contact"> <!-- contact -->
             <div class="hair">Contact</div>
             <pre data-aos="fade-up" data-aos-duration="500">Let's work<b> Together!</b></pre>
         </div>

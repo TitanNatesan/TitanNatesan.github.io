@@ -10,6 +10,9 @@
 * {
     font-family: var(--bs-font-sans-serif);
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     width: 100%;
@@ -135,7 +138,7 @@ body .body-overlay {
     left: 0;
     top: 0;
 
-    background-image: radial-gradient(circle at 0% 0%, #ffffff55, #0000000f);
+    background-image: radial-gradient(circle at 0% 0%, #ffffff33, #00000044);
 }
 
 .main-content-left-fixed .bottom {
@@ -205,6 +208,7 @@ body .body-overlay {
     padding: 5%;
     height: auto;
     pointer-events: auto;
+    scroll-snap-type: y mandatory;
 }
 
 
@@ -500,4 +504,54 @@ p b {
 .contact {
     padding: 0;
     margin: 0;
+}
+
+.material-symbols-outlined {
+    width: auto;
+    transition: .5s;
+    cursor: pointer;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.material-symbols-outlined:hover{
+    color: var(--priC);
+    transition: .5s;
+    text-shadow: 0 0 10px #fff,0 0 20px var(--priC);
+}
+
+.snavigate{
+    padding: 25px;
+    position: fixed;
+    right: 3%;
+    height: 70vh;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #00000037;
+    border: 1px solid var(--triC);
+    border-radius: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items:center;
+    transition: .5s;
+    z-index: 10;
+}
+
+.snavigate:hover{
+    backdrop-filter: blur(5px);
+    background-color: #ffffff0d;
+    transition: .5s;
+    box-shadow: 0 0 5px #fff,0 0 10px var(--priC),inset 0 0 5px #fff,inset 0 0 10px var(--priC);
+    border: 1px solid #fff;
+}
+
+.snavigate a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
 }

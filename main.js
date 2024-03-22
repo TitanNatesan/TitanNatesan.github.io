@@ -8,7 +8,7 @@ function rotateToMouse(e) {
   const topY = mouseY - bounds.y;
   const center = {
     x: leftX - bounds.width / 2,
-    y: topY - bounds.height / 2
+    y: topY - bounds.height / 2 
   }
   const distance = Math.sqrt(center.x**4 + center.y**4);
   
