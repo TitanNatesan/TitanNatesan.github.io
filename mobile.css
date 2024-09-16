@@ -199,26 +199,32 @@
 
     .contact {
         padding-bottom: 50px;
-        margin: auto 5%;
+        margin: auto;
+        width: 100%;
+        /* border: 1px solid white; */
+    }
+
+    #contactForm{
+        margin: auto;
     }
 
     .snavigate {
         display: none;
     }
 
-.contact form label p {
-    font-size: 28px;
-}
+    .contact form label p {
+        font-size: 28px;
+    }
 
-.contact form input[type='submit']{
-    width: 60%;
-    padding: 6px;
-    border-radius: 200px;
-    font-size: 1.6rem;
-    font-weight: 900;
-    border: none;
-    background-color: var(--priC);
-    transition: all 0.5s ease;
-}
+    .contact form input[type='submit'] {
+        width: 60%;
+        padding: 6px;
+        border-radius: 200px;
+        font-size: 1.6rem;
+        font-weight: 900;
+        border: none;
+        background-color: var(--priC);
+        transition: all 0.5s ease;
+    }
 
 }

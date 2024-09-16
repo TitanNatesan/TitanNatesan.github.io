@@ -47,7 +47,7 @@ body .body-overlay {
 
 .main-container-left-fixed {
     width: 30%;
-    min-width: 450px;
+    min-width: 420px;
     height: 100vh;
     margin: 0;
     position:fixed;
