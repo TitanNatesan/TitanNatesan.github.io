@@ -4,294 +4,426 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="stylesheet" href="external.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="mobile.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="particles.css">
-    <title>Titan Natesan - Full Stack Developer and AI Enthusiast</title>
-    <meta name="description"
-        content="Welcome to the portfolio of Titan Natesan, a full stack developer, AI enthusiast, Python and Django developer, and founder of Ondrai Associations. Currently a dedicated student in the field of technology.">
-    <meta name="keywords"
-        content="Titan Natesan, Full Stack Developer, AI Enthusiast, Python Developer, Django Developer, Student, Ondrai Associations, Web Development">
-    <link rel="canonical" href="https://natesanportfolio.netlify.app/">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="external.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="mobile.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="particles.css" />
+
+  <title>Titan Natesan - Full Stack Developer and AI Enthusiast</title>
+  <meta name="description"
+    content="Welcome to the portfolio of Titan Natesan, a full stack developer, AI enthusiast, Python and Django developer, and founder of Ondrai Associations. Currently a dedicated student in the field of technology." />
+  <meta name="keywords"
+    content="Titan Natesan, Full Stack Developer, AI Enthusiast, Python Developer, Django Developer, Student, Ondrai Associations, Web Development" />
+  <meta name="author" content="Titan Natesan" />
+  <!-- <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+</head>
 
 <body>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <div id="particles-js"></div>
-    
-    <div class="snavigate">
-        <a href="#intro"><span class="material-symbols-outlined">
-                home
-            </span></a>
-        <a href="#about"><span class="material-symbols-outlined">
-                person
-            </span></a>
-        <a href="#EduExp"><span class="material-symbols-outlined">
-                import_contacts
-            </span></a>
-        <a href="#service"><span class="material-symbols-outlined">
-                star
-            </span></a>
-        <a href="#skills"><span class="material-symbols-outlined">
-                work
-            </span></a>
-        <a href="#contact"><span class="material-symbols-outlined">
-                contacts
-            </span></a>
-    </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <div id="particles-js"></div>
+  <div id="particles-js2"></div>  
 
-    <div id="loader-wrapper" class="wrapper">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <!-- <div id="loader"></div> -->
+  <div class="snavigate">
+    <a href="#intro"><span class="material-symbols-outlined"> home </span></a>
+    <a href="#about"><span class="material-symbols-outlined"> person </span></a>
+    <a href="#EduExp"><span class="material-symbols-outlined">
+        import_contacts
+      </span></a>
+    <a href="#service"><span class="material-symbols-outlined"> star </span></a>
+    <a href="#skills"><span class="material-symbols-outlined"> work </span></a>
+    <a href="#contact"><span class="material-symbols-outlined">
+        contacts
+      </span></a>
+  </div>
+
+  <div id="loader-wrapper" class="wrapper">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <!-- <div id="loader"></div> -->
+  </div>
+  <div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
     </div>
-    <div class="header">
-        <div class="progress-container">
-            <div class="progress-bar" id="myBar"></div>
+  </div>
+
+  <div class="main-container-left-fixed" data-aos="fade-down" data-aos-duration="400">
+    <div class="main-content-left-fixed">
+      <div class="top">
+        <h1 data-aos="fade-left" data-aos-duration="300" data-aos-delay="300">
+          Titan
+        </h1>
+        <h6 data-aos="fade-right" data-aos-duration="300" data-aos-delay="300">
+          FullStack Dev <br> & <b>Prompt Engineer</b>
+        </h6>
+      </div>
+      <div class="between" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500">
+        <div class="card">
+          <div class="glow"></div>  
         </div>
-    </div>
-
-    <div class="main-container-left-fixed" data-aos="fade-down" data-aos-duration="400">
-        <div class="main-content-left-fixed">
-            <div class="top">
-                <h1 data-aos="fade-left" data-aos-duration="300" data-aos-delay="300">Titan</h1>
-                <h6 data-aos="fade-right" data-aos-duration="300" data-aos-delay="300">FullStack Developer & <b>Prompt
-                        Engineer</b></h6>
-            </div>
-            <div class="between" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500">
-                <div class="card">
-                    <div class="glow"></div>
-                </div>
-            </div>
-            <script>
-                function changeImg(img, id) {
-                    document.getElementById(id).src = img;
-                }
-            </script>
-            <div class="bottom">
-                <div data-aos="flip-left" data-aos-duration="500" data-aos-delay="400">
-                    <div class="icons" onclick="gotopage('https://www.instagram.com/titan_natesan/')">
-                        <img id="InstaIcon" src="icons/Instagram.png" alt="instagram" />
-                    </div>
-                </div>
-
-                <div data-aos="flip-left" data-aos-duration="500" data-aos-delay="600">
-                    <div class="icons" onclick="gotopage('https://www.instagram.com/titan_natesan/')">
-                        <img id="FaceIcon" src="icons/facebook.png" alt="facebook" />
-                    </div>
-                </div>
-                <div data-aos="flip-left" data-aos-duration="500" data-aos-delay="800">
-                    <div class="icons" onclick="gotopage('https://github.com/TitanNatesan/')">
-                        <img id="GitIcon" src="icons/github.png" alt="github" />
-                    </div>
-                </div>
-                <div data-aos="flip-left" data-aos-duration="500" data-aos-delay="1000">
-                    <div class="icons" onclick="gotopage('https://www.linkedin.com/in/titan-natesan/')">
-                        <img id="LinkedIcon" src="icons/linkedin.png" alt="linkedIn" />
-                    </div>
-                </div>
-                <div data-aos="flip-left" data-aos-duration="500" data-aos-delay="1200">
-                    <div class="icons" onclick="gotopage('https://wa.me/+916380615171')">
-                        <img id="WhatsIcon" src="icons/whatsapp.png" alt="whatsApp" />
-                    </div>
-                </div>
-            </div>
-            <div class="buton">Download CV</div>
+      </div>
+      <script>
+        function changeImg(img, id) {
+          document.getElementById(id).src = img;
+        }
+      </script>
+      <div class="bottom">
+        <div data-aos="flip-left" data-aos-duration="500" data-aos-delay="400">
+          <div class="icons" onclick="gotopage('https://www.instagram.com/titan_natesan/')">
+            <img id="InstaIcon" src="icons/Instagram.png" alt="instagram" />
+          </div>
         </div>
-    </div>
 
-    <div class="r" dir="ltr">
-        <div class="intro " id="intro"> <!-- Introduction -->
-            <div class="hair">Introduction</div>
-            <pre data-aos="fade-up" data-aos-duration="500">I'm <b>Titan</b>
-Designer, FullStack
-and AI Developer</pre>
-            <p id="tw">I'm Titan <b>Natesan</b></p>
-        <div class="about " id="about"> <!-- Abuot -->
-            <div class="hair">About</div>
-            <pre data-aos="fade-up" data-aos-duration="500">About <b>Me</b></pre>
-            <p data-aos="fade-up" data-aos-duration="500"><b>Hello</b> there, My name is <b>Natesan</b> alis Titan.
-                I'm a Engineering student in <b>Karpagam</b> Academy of Higher Education and I'm
-                pursuing a <b>CSE</b> degree. Im very Curious of Computers and other Computer Technologies from my
-                childhood.
-                <br>That <b>curiosity</b> brings me to this domain of <b>Web</b> and <b>AI</b> Artificial Inteligence
-                development.
-                And i also have good communication skills and <b>problem solving skills</b> and I
-                always be Careful for my <b>Health</b>
-            </p>
+        <div data-aos="flip-left" data-aos-duration="500" data-aos-delay="600">
+          <div class="icons" onclick="gotopage('https://www.facebook.com/TitanNatesan')">
+            <img id="FaceIcon" src="icons/facebook.png" alt="facebook" />
+          </div>
         </div>
-        <div class="res " id="EduExp"> <!-- Resume -->
-            <div class="hair">Resume</div>
-            <pre data-aos="fade-down" data-aos-duration="500">Education & <b>
+        <div data-aos="flip-left" data-aos-duration="500" data-aos-delay="800">
+          <div class="icons" onclick="gotopage('https://github.com/TitanNatesan/')">
+            <img id="GitIcon" src="icons/github.png" alt="github" />
+          </div>
+        </div>
+        <div data-aos="flip-left" data-aos-duration="500" data-aos-delay="1000">
+          <div class="icons" onclick="gotopage('https://www.linkedin.com/in/titannatesan/')">
+            <img id="LinkedIcon" src="icons/linkedin.png" alt="linkedIn" />
+          </div>
+        </div>
+        <div data-aos="flip-left" data-aos-duration="500" data-aos-delay="1200">
+          <div class="icons" onclick="gotopage('https://wa.me/+916380615171')">
+            <img id="WhatsIcon" src="icons/whatsapp.png" alt="whatsApp" />
+          </div>
+        </div>
+      </div>
+      <div class="buton"><a href="83.pdf" download="Resume.pdf">Download Resume</a></div>
+    </div>
+  </div>
+
+  <div class="r" dir="ltr">
+    <div class="intro" id="intro">
+      <!-- Introduction -->
+      <div class="hair">Introduction</div>
+      <pre data-aos="fade-up" data-aos-duration="500">
+I'm <b>Titan</b>
+<h1 class="ml12">A new production</h1>
+</pre>
+
+      <p id="tw">I'm Titan <b>Natesan</b></p>
+      <div class="about" id="about">
+        <!-- Abuot -->
+        <div class="hair">About</div>
+        <pre data-aos="fade-up" data-aos-duration="500">About <b>Me</b></pre>
+        <p data-aos="fade-up" data-aos-duration="500">
+          <b>Hello</b> there, My name is <b>Natesan</b> alis
+          Titan. I'm a Engineering student in
+          <b>Karpagam</b> Academy of Higher Education and
+          I'm pursuing a <b>CSE</b> degree. Im very Curious
+          of Computers and other Computer Technologies from
+          my childhood. <br />That <b>curiosity</b> brings
+          me to this domain of <b>Web</b> and
+          <b>AI</b> Artificial Inteligence development. And
+          i also have good communication skills and
+          <b>problem solving skills</b> and I always be
+          Careful for my <b>Health</b>
+        </p>
+      </div>
+      <div class="res" id="EduExp">
+        <!-- Resume -->
+        <div class="hair">Resume</div>
+        <pre data-aos="fade-down" data-aos-duration="500">Education & <b>
 Experience</b></pre>
-            <div class="resume-timeline">
-                <div class="item" data-aos="fade-up" data-aos-duration="500">
-                    <span class="date">2020 - 2022</span>
-                    <h2>High School</h2>
-                    <p>Universal Matriculation Higher Secondary School</p>
-                    <h2>Web Developer</h2>
-                    <p>Freelance</p>
-                </div>
-                <div class="item" data-aos="fade-up" data-aos-duration="500">
-                    <span class="date">2022 - Present</span>
-                    <h2>College</h2>
-                    <p>Karpagam Academy of Higher Education</p>
-                </div>
-            </div>
+        <div class="resume-timeline">
+          <div class="item" data-aos="fade-up" data-aos-duration="500">
+            <span class="date">2020 - 2022</span>
+            <h2>High School</h2>
+            <p>
+              Universal Matriculation Higher Secondary
+              School
+            </p>
+          </div>
+          <div class="item" data-aos="fade-up" data-aos-duration="500">
+            <span class="date">2022 - Present</span>
+            <h2>College</h2>
+            <p>Karpagam Academy of Higher Education</p>
+            <h2>Full Stack Development</h2>
+            <p>Freelancer</p>
+          </div>
         </div>
-        <div class="ser " id="service"> <!-- Abuot -->
-            <div class="hair">Services</div>
-            <pre data-aos="fade-up" data-aos-duration="500">My <b>Specializations</b></pre>
-            <div class="card" data-aos="flip-down" data-aos-duration="1000" data-aos-easing="ease-out"
-                data-aos-anchor-placement="center-bottom">
-                <h2>Designing</h2>
-                <p>I create digital Designes and Layouts using Figma and Canva</p>
-            </div>
-            <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-easing="ease-out"
-                data-aos-anchor-placement="center-bottom">
-                <h2>Web Development</h2>
-                <p>I can make any website with a proper a Design/Layout</p>
-            </div>
-            <div class="card" data-aos="flip-right" data-aos-duration="1000" data-aos-easing="ease-out"
-                data-aos-anchor-placement="center-bottom">
-                <h2>AI Development</h2>
-                <p>I even make Classification AI models as well as Generative AI models</p>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="hair">Skills</div>
-            <pre data-aos="fade-up" data-aos-duration="500">Development <b>Skills</b></pre>
-            <div class="cont">
-                <div class="icon" data-aos="fade-up-left" data-aos-duration="500">
-                    <img src="icons/HTML.png">
-                    <h2>HTML</h2>
-                </div>
-                <div class="icon" data-aos="fade-up" data-aos-duration="500">
-                    <img src="icons/CSS.png">
-                    <h2>CSS</h2>
-                </div>
-                <div class="icon" data-aos="fade-up-right" data-aos-duration="500">
-                    <img src="icons/JS.png">
-                    <h2>JS</h2>
-                </div>
-                <div class="icon" data-aos="fade-down-left" data-aos-duration="500">
-                    <img src="icons/dj.png">
-                    <h2>Django</h2>
-                </div>
-                <div class="icon" data-aos="fade-down" data-aos-duration="500">
-                    <img src="icons/mongodb.png">
-                    <h2>Mongo DB</h2>
-                </div>
-                <div class="icon" data-aos="fade-down-right" data-aos-duration="500">
-                    <img src="icons/compose-removebg-preview.png">
-                    <h2>Jetpack Compose</h2>
-                </div>
+      </div>
+      <div class="ser" id="service">
+        <!-- Abuot -->
+        <div class="hair">Services</div>
+        <pre data-aos="fade-up" data-aos-duration="500">My <b>Specializations</b></pre>
 
-            </div>
-
-            <pre data-aos="fade-up" data-aos-duration="500">AI <b>Skills</b></pre>
-            <div class="cont">
-                <div class="icon" data-aos="fade-left" data-aos-duration="500">
-                    <img src="icons/TF.png">
-                    <h2>Tensorflow</h2>
-                </div>
-                <div class="icon" data-aos="zoom-in" data-aos-duration="500">
-                    <img src="icons/pytorch.svg">
-                    <h2>PyTorch</h2>
-                </div>
-                <div class="icon" data-aos="fade-right" data-aos-duration="500">
-                    <img src="icons/opencv.svg">
-                    <h2>OpenCV</h2>
-                </div>
-            </div>
-            <pre data-aos="fade-up" data-aos-duration="500">Collabration <b>Skills</b></pre>
-            <div class="cont">
-                <div class="icon" data-aos="zoom-out" data-aos-duration="500">
-                    <img src="icons/githubl.png">
-                    <h2>GitHub</h2>
-                </div>
-            </div>
+        <div class="card" data-aos="flip-right" data-aos-duration="1000" data-aos-easing="ease-in-out"
+          data-aos-anchor-placement="bottom-bottom">
+          <h2>Back-End Development</h2>
+          <p>
+            I'm a Specialized backend developer using django and django-restframework
+            for backend development and Authentication.
+          </p>
+          <span class="material-symbols-outlined">
+            data_object
+          </span>
         </div>
-        <div class="project" id="skills">
-            <div class="hair">Projects</div>
-            <pre data-aos="fade-up" data-aos-duration="500">UI|UX<b> Projects</b></pre>
-            <div class="cont">
-                <div class="pro" data-aos="zoom-in" data-aos-duration="500">
-                    <video muted autoplay loop>
-                        <source src="videos/Dizop.mp4" type="">
-                    </video>
-                </div>
-            </div>
-            <br><br><br><br><br>
+        <div class="card" data-aos="flip-right" data-aos-duration="1000" data-aos-easing="ease-in-out"
+          data-aos-anchor-placement="bottom-bottom">
+          <h2>Full Stack Development</h2>
+          <p>
+            Along With Prior knowledge in backend I use react to create UI for both WebSite and
+            Cross-Platform Mobile Application.
+          </p>
+          <span class="material-symbols-outlined">
+            devices
+          </span>
         </div>
-        <div class="contact" id="contact"> <!-- contact -->
-            <div class="hair">Contact</div>
-            <pre data-aos="fade-up" data-aos-duration="500">Let's work<b> Together!</b></pre>
+        <div class="card" data-aos="flip-right" data-aos-duration="1000" data-aos-easing="ease-in-out"
+          data-aos-anchor-placement="bottom-bottom">
+          <h2>Data Analytics</h2>
+          <p>
+            The knowledge in Python programming and problem solving skills made me good in Data
+            Science too.
+          </p>
+          <span class="material-symbols-outlined">
+            bar_chart
+          </span>
         </div>
-        <section class="contact-area page-section scroll-content" id="contact" data-aos="fade-up"
-            data-aos-duration="500">
-            <div class="custom-container">
-                <div class="contact-content content-width">
-                    <p id="required-msg">* Marked fields are required to fill.</p>
+        <div class="card" data-aos="flip-right" data-aos-duration="1000" data-aos-easing="ease-in-out"
+          data-aos-anchor-placement="bottom-bottom">
+          <h2>Prompt Engineering</h2>
+          <p>
+            I also use AI platforms to boost up my productivity in Development
+          </p>
+          <span class="material-symbols-outlined">
+            robot_2
+          </span>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="hair">Skills</div>
+        <pre data-aos="fade-up" data-aos-duration="500"
+          data-aos-anchor-placement="bottom-bottom">Tech <b>Stack</b></pre>
+        <div class="cont">
+          <div class="icon" data-aos="fade-up" data-aos-duration="500" data-aos-anchor-placement="center-bottom">
+            <img src="icons/react.png" />
+            <h2>React <br>Native</h2>
+          </div>
+          <div class="icon" data-aos="fade-up" data-aos-duration="500" data-aos-anchor-placement="center-bottom">
+            <img src="icons/poetry.png" />
+            <h2>Poetry</h2>
+          </div>
+          <div class="icon" data-aos="fade-up" data-aos-duration="500" data-aos-anchor-placement="center-bottom">
+            <img src="icons/numpy.png" />
+            <h2>Numpy</h2>
+          </div>
+          <div class="icon" data-aos="fade-up" data-aos-duration="500" data-aos-anchor-placement="center-bottom">
+            <img src="icons/pandas.png" />
+            <h2>Pandas</h2>
+          </div>
+          <div class="icon" data-aos="fade-up" data-aos-duration="500" data-aos-anchor-placement="center-bottom">
+            <img src="icons/dj.png" />
+            <h2>Django Rest <br>Framework</h2>
+          </div>
+          <div class="icon" data-aos="fade-up" data-aos-duration="500">
+            <img src="icons/postgresql.png" />
+            <h2>PostgreSQL</h2>
+          </div>
+          <div class="icon" data-aos="fade-up" data-aos-duration="500">
+            <img src="icons/mysql.png" />
+            <h2>MySQL</h2>
+          </div>
+          <div class="icon" data-aos="fade-up" data-aos-duration="500">
+            <img src="icons/docker.png" />
+            <h2>Docker</h2>
+          </div>
+        </div>
 
-                    <form class="contact-form scroll-animation" data-animation="fade_from_bottom" method="POST"
-                        action="mailto:titannatesan@gmail.com" enctype="text/plain">
-                        <div class="alert alert-success messenger-box-contact__msg" style="display: none" role="alert">
-                            Your message was sent successfully.
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="input-group">
-                                    <label for="full-name">full Name <sup>*</sup></label>
-                                    <input type="text" name="full-name" id="full-name" placeholder="Your Full Name">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="input-group">
-                                    <label for="email">Email <sup>*</sup></label>
-                                    <input type="email" name="email" id="email" placeholder="Your email adress">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="input-group">
-                                    <label for="phone-number">phone <span>(optional)</span></label>
-                                    <input type="text" name="phone-number" id="phone-number"
-                                        placeholder="Your number phone">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="input-group">
-                                    <label for="message">message</label>
-                                    <textarea name="message" id="message"
-                                        placeholder="Wrire your message here ..."></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <input type="button" value="Submit" class='submit-btn-wrap'>
-                    </form>
+        <pre data-aos="fade-up" data-aos-duration="500">AI <b>Skills</b></pre>
+        <div class="cont">
+          <div class="icon" data-aos="fade-up" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">
+            <img src="icons/TF.png" />
+            <h2>Tensorflow</h2>
+          </div>
+          <div class="icon" data-aos="fade-up" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">
+            <img src="icons/pytorch.svg" />
+            <h2>PyTorch</h2>
+          </div>
+          <div class="icon" data-aos="fade-up" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">
+            <img src="icons/opencv.svg" />
+            <h2>OpenCV</h2>
+          </div>
+        </div>
+        <pre data-aos="fade-up" data-aos-duration="500">Dev <b>Tools</b></pre>
+        <div class="cont">
+          <div class="icon" data-aos="zoom-out" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">
+            <img src="icons/vscode.png" />
+            <h2>VS Code</h2>
+          </div>
+          <div class="icon" data-aos="zoom-out" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">
+            <img src="icons/jupyterlab.png" />
+            <h2>Jupyter Lab</h2>
+          </div>
+          <div class="icon" data-aos="zoom-out" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">
+            <img src="icons/git.png" />
+            <h2>Git</h2>
+          </div>
+          <div class="icon" data-aos="zoom-out" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">
+            <img src="icons/githubb.png" />
+            <h2>GitHub</h2>
+          </div>
+        </div>
 
-                </div>
-            </div>
-        </section>
+      </div>
+      <div class="project" id="skills">
+        <div class="hair">Projects</div>
+        <pre data-aos="fade-up" data-aos-duration="500">All<b> Projects</b></pre>
+        <div class="cont">
+          <div class="pro" data-aos="zoom-in" data-aos-duration="500"
+            onclick="window.open('https://hackbox.in/', '_blank')">
+            <video muted autoplay loop>
+              <source src="videos/Dizop.mp4" type="" />
+            </video>
+            <h3>Dizop</h3>
+          </div>
+          <div class="pro" style="width: 40%;" data-aos="zoom-in" data-aos-duration="500"
+            onclick="window.open('https://aimsportal.netlify.app/', '_blank')">
+            <img src="icons/AIMS.png">
+            <h3>S&T AIMS Portal (Indian Railways)</h3>
+          </div>
+          <div class="pro" style="width: 38%;" data-aos="zoom-in" data-aos-duration="500"
+            onclick="window.open('https://github.com/TitanNatesan/ImageDehazing', '_blank')">
+            <img src="pics/imageDehaze.png">
+            <h3>Image Dehazing</h3>
+          </div>
+          <div class="pro" data-aos="zoom-in" data-aos-duration="500"
+            onclick="window.open('https://herbalplantclassification.streamlit.app/', '_blank')">
+            <video src="./projects/herbalplantclassify.mp4" class="mobbi" muted autoplay loop></video>
+            <h3>Herbal Plant Classification</h3>
+          </div>
+
+        </div>
+        <br /><br /><br /><br /><br />
+      </div>
+      <div class="contact" id="contact">
+        <!-- contact -->
+        <div class="hair">Contact</div>
+        <pre data-aos="fade-up" data-aos-duration="500">Let's work<b> Together!</b></pre>
+        <form id="contactForm">
+          <!-- To simplify the tutorial, the value is static. -->
+          <!-- <input type="hidden" name="contact_number" value="697483" /> -->
+        
+          <label for="name">
+            <input type="text" id="name" name="name" placeholder="Your Name" />
+            <p>Name</p>
+          </label>
+        
+          <label for="phone">
+            <input type="text" id="phone" name="phone" placeholder="+91 000 000 0000" />
+            <p>Phone no.</p>
+          </label>
+        
+          <label for="from_mail">
+            <input type="email" id="from_mail" name="from_mail" placeholder="your.email@domain.any"/>
+            <p>Email</p>
+          </label>
+        
+          <label for="message">
+            <textarea id="message" name="message" placeholder="Do you Like to Ask me anything ???"></textarea>
+            <p>Message</p>
+          </label>
+        
+          <input type="submit" value="Send" onclick="sendEmail(event)" />
+        
+          <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+          <script type="text/javascript">
+            (function () {
+              emailjs.init({
+                publicKey: "J7R_C7yEHOyxkoVmf",
+              });
+            })();
+        
+            function sendEmail(event) {
+              event.preventDefault();
+        
+              // Get form elements
+              const name = document.getElementById("name").value.trim();
+              const phone = document.getElementById("phone").value.trim();
+              const email = document.getElementById("from_mail").value.trim();
+              const message = document.getElementById("message").value.trim();
+        
+              // Validation
+              if (!name) {
+                alert("Name is required.");
+                return;
+              }
+        
+              if (!email || !validateEmail(email)) {
+                alert("Please enter a valid email address.");
+                return;
+              }
+        
+              if (phone && !validatePhone(phone)) {
+                alert("Please enter a valid phone number.");
+                return;
+              }
+        
+              if (!message) {
+                alert("Message is required.");
+                return;
+              }
+        
+              // Send email if validation passes
+              emailjs.sendForm("service_pn1qt8f", "template_lxrqb1w", document.getElementById("contactForm"))
+                .then(
+                  () => {
+                    console.log("SUCCESS!");
+                    alert("Email sent successfully!");
+                    document.forms["contactForm"].reset();
+                  },
+                  (error) => {
+                    console.log("FAILED...", error);
+                    alert("Failed to send email. Please try again later.");
+                  }
+                );
+            }
+        
+            function validateEmail(email) {
+              const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+              return emailPattern.test(email);
+            }
+        
+            function validatePhone(phone) {
+              // Example: Basic phone number validation
+              const phonePattern = /^\+?[0-9\s]*$/; // Adjust this regex as needed
+              return phonePattern.test(phone);
+            }
+          </script>
+        </form>
+        
+        <br>
+      </div>
+
     </div>
-    <script src="main.js"></script>
-    <script src="app.js"></script>
-    <script src="particles.js"></script>
-
+  </div>
+  <script src="main.js"></script>
+  <script src="particles.js"></script>
 </body>
 
 </html>

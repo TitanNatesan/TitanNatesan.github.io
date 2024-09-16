@@ -1,16 +1,15 @@
 :root {
     --backGround: #000000;
     --priC: #00b46f;
-    --secC: white;
-    --triC: gray;
+    --secC: #ffffff;
+    --triC: #dfffe5;
+    --summa: #c3ffb6;
     --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-* {
-    font-family: var(--bs-font-sans-serif);
-}
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -22,7 +21,6 @@ body {
     margin: 0;
     padding: 0;
     color: var(--secC);
-    font-family: var(--bs-font-sans-serif);
     pointer-events: auto;
     overflow-x: hidden;
 }
@@ -49,9 +47,10 @@ body .body-overlay {
 
 .main-container-left-fixed {
     width: 30%;
+    min-width: 450px;
     height: 100vh;
     margin: 0;
-    position: fixed;
+    position:fixed;
     display: flex;
     padding: auto;
     pointer-events: auto;
@@ -67,10 +66,9 @@ body .body-overlay {
 }
 
 .main-content-left-fixed:hover {
-    border: 1px solid var(--priC);
     transition: 500ms;
     box-shadow: inset 0 0 10px 0px var(--priC), 0 0 10px 0px var(--priC);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px) brightness(1.2);
     background: rgba(255, 255, 255, 0.1);
 }
 
@@ -85,17 +83,18 @@ body .body-overlay {
 }
 
 .main-content-left-fixed .top h1 {
-    font-size: 250%;
+    font-size: 300%;
     display: inline;
     color: var(--priC);
 }
 
 .main-content-left-fixed .top h6 {
-    font-size: 75%;
+    font-size: 120%;
     width: 30%;
     display: inline;
     text-align-last: right;
     color: var(--secC);
+    text-shadow: 0 0 2px black;
 }
 
 .main-content-left-fixed .top h6 b {
@@ -157,7 +156,7 @@ body .body-overlay {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #767676b0;
+    background-color: #ffffff69;
     transition: 600ms;
     box-shadow: 0;
 }
@@ -174,17 +173,19 @@ body .body-overlay {
     width: 62%;
     transition: 300ms;
 }
+
 .main-content-left-fixed .bottom .icons:hover img {
     width: 80%;
     transition: 300ms;
     filter: invert();
+    transition-delay: .1s;
 }
 
 .main-content-left-fixed .buton {
     display: flex;
     color: var(--backGround);
     font-weight: 700;
-    font-size: 120%;
+    font-size: 150%;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -200,6 +201,12 @@ body .body-overlay {
 .main-content-left-fixed .buton:hover {
     box-shadow: 0 0 10px 0px var(--priC);
     transition: .5s;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+.main-content-left-fixed .buton a {
+    all: unset;
 }
 
 .r {
@@ -218,7 +225,7 @@ body .body-overlay {
 .r .intro {
     padding: 0;
     margin: 0;
-    height: 80vh;
+    /* border: 1px solid wheat; */
 }
 
 .hair {
@@ -227,18 +234,20 @@ body .body-overlay {
     border-radius: 100px;
     padding: 5px 35px;
     transition: 500ms;
+    font-size: 22px;
 }
 
 .hair:hover {
     border: 1px solid var(--priC);
     transition: 500ms;
     box-shadow: inset 0 0 30px 0px var(--priC), 0 0 10px 0px var(--priC);
+    backdrop-filter: brightness(2);
 }
 
 pre {
     color: var(--secC);
     margin: 0;
-    line-height: 110%;
+    line-height: 80%;
     font-size: 450%;
     font-weight: lighter;
     margin: 6% 0;
@@ -252,14 +261,16 @@ pre b {
 p {
     width: 80%;
     margin: 0;
-    font-family: var(--bs-font-monospace);
-    font-weight: bold;
+    font-weight: lighter;
     color: var(--triC);
+    font-size:26px;
+    text-shadow: 0 0 2px black;
 }
 
 p b {
     color: var(--priC);
     font-weight: bold;
+    text-shadow: 0 0 2px black;
 }
 
 
@@ -268,7 +279,7 @@ p b {
 .r .about {
     padding: 0;
     margin: 10% 0;
-    margin-top: 20%;
+    /* border: 1px solid white ; */
 }
 
 /*Resume-------------------------------------------------------------------------------------------------------*/
@@ -323,6 +334,7 @@ p b {
 .r .res .resume-timeline .item .date {
     display: block;
     margin-bottom: 35px;
+    font-size: 18px;
     transition: .3s;
 }
 
@@ -340,9 +352,8 @@ p b {
 
 .r .res .resume-timeline .item p {
     font-size: 18px;
-    color: #999999;
+    color: var(--triC);
     margin-bottom: 18px;
-    font-family: var(--bs-font-monospace);
 }
 
 .r .res .resume-timeline .item p:last-child {
@@ -355,6 +366,7 @@ p b {
 
 .r .res .resume-timeline .item:hover .date {
     color: var(--priC);
+    text-shadow: 0 0 2px rgb(255, 255, 255);
 }
 
 /*Services---------------------------------------------------------------------------------------------------------*/
@@ -373,6 +385,20 @@ p b {
     border: 1px solid var(--triC);
     transition: 1s;
     margin-bottom: 5%;
+    position: relative;
+}
+
+.r .ser .card span{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 100,
+    'GRAD' 0,
+    'opsz' 24
 }
 
 .r .ser .card:hover {
@@ -391,11 +417,12 @@ p b {
 }
 
 .r .ser .card p {
-    width: 70%;
-    font-size: 18px;
+    width: 75%;
+    font-size: 20px;
     color: var(--triC);
     margin-bottom: 18px;
-    font-family: var(--bs-font-monospace);
+    margin-left: 0;
+    /* border: 1px solid white; */
 }
 
 
@@ -467,6 +494,7 @@ p b {
     filter: opacity(1);
     transition: 0.5s;
     font-size: 20px;
+    color: white;
 }
 
 
@@ -479,24 +507,72 @@ p b {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    gap: 15px;
     flex-wrap: wrap;
 }
 
 .r .project .cont .pro {
     width: 80%;
-    height: 20%;
     position: relative;
+    border: 5px;
+}
+
+.r .project .cont .pro::after {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    content: "";
+    width: 100%;
+    height: 0;
+    border-radius: 20px;
+    background: linear-gradient(0deg, rgba(0,0,0,.6) 0%, rgba(0,0,0,.2) 30%, rgba(29, 29, 29, 0) 50%);
+    transition: all 0.5s ease-in-out;
+}
+
+.r .project .cont .pro:hover::after {
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    background: linear-gradient(0deg, rgba(0,0,0,.6) 0%, rgba(0,0,0,.3) 20%, rgba(29, 29, 29, 0) 50%);
 }
 
 .r .project .cont .pro video {
     width: 100%;
-    height: auto;
-    border: 2px solid gray;
     border-radius: 20px;
     object-fit: cover;
     z-index: -1;
+}
+
+.r .project .cont .pro:has(.mobbi) {
+    width: 20%;
+    position: relative;
+}
+
+.r .project .cont .pro:has(.mobbi)::after {
+    width: 100%;
+}
+
+.r .project .cont .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.r .project .cont .pro h3{
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    color: white;
+    z-index: 99;
+    font-size: 22px;
+    font-weight: 100;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.r .project .cont .pro:hover h3{
+    opacity: 1;
 }
 
 /* Contact page........................................................................ */
@@ -504,6 +580,7 @@ p b {
 .contact {
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 
 .material-symbols-outlined {
@@ -517,13 +594,13 @@ p b {
         'opsz' 24
 }
 
-.material-symbols-outlined:hover{
+.material-symbols-outlined:hover {
     color: var(--priC);
     transition: .5s;
-    text-shadow: 0 0 10px #fff,0 0 20px var(--priC);
+    text-shadow: 0 0 10px #fff, 0 0 20px var(--priC);
 }
 
-.snavigate{
+.snavigate {
     padding: 25px;
     position: fixed;
     right: 3%;
@@ -536,22 +613,128 @@ p b {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content:space-evenly;
-    align-items:center;
+    justify-content: space-evenly;
+    align-items: center;
     transition: .5s;
     z-index: 10;
 }
 
-.snavigate:hover{
+.snavigate:hover {
     backdrop-filter: blur(5px);
     background-color: #ffffff0d;
     transition: .5s;
-    box-shadow: 0 0 5px #fff,0 0 10px var(--priC),inset 0 0 5px #fff,inset 0 0 10px var(--priC);
+    box-shadow: 0 0 5px #fff, 0 0 10px var(--priC), inset 0 0 5px #fff, inset 0 0 10px var(--priC);
     border: 1px solid #fff;
 }
 
-.snavigate a{
+.snavigate a {
     text-decoration: none;
     color: #fff;
     cursor: pointer;
+}
+
+.contact form {
+    width: 90%;
+    border: 1px solid var(--triC);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    justify-content: space-evenly;
+    transition: all .8s ease;
+}
+
+.contact form:hover{
+    box-shadow: inset 0 0 10px 0px var(--priC), 0 0 10px 0px var(--priC);
+    backdrop-filter: blur(100px) brightness(1.2);
+}
+
+.contact form label {
+    position: relative;
+    width: 70%;
+    height: 50px;
+    /* border: 1px solid rebeccapurple; */
+    margin: 20px auto;
+    align-items: center;
+}
+
+.contact form label:has(textarea){
+    height: 150px;
+}
+
+.contact form label input{
+    all: unset;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    font-size: 2rem;
+    padding: 0;
+    border-bottom: 1px solid var(--triC);
+    transition: all 0.5s ease;
+}
+
+.contact form label:not(:focus) input::placeholder{
+    color: transparent;
+    transition: all 0.5s ease;
+}
+
+.contact form label input:focus::placeholder{
+    color: #ffffff96;
+}
+
+.contact form input[type='submit']{
+    width: 60%;
+    padding: 10px;
+    border-radius: 200px;
+    font-size: 2rem;
+    font-weight: 900;
+    border: none;
+    background-color: var(--priC);
+    transition: all 0.5s ease;
+}
+
+.contact form input[type='submit']:hover{
+    box-shadow: 0 0 10px 0px var(--priC);
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+.contact form label textarea{
+    all: unset;
+    width: 100%;
+    height: 50px;
+    font-size: 2rem;
+    padding: 0;
+    border-bottom: 1px solid var(--triC);
+}
+
+.contact form label:not(:focus) textarea::placeholder{
+    color: transparent;
+    transition: all 0.5s ease;
+}
+
+.contact form label textarea:focus::placeholder{
+    color: #ffffff96;
+}
+
+.contact form label p {
+    position: absolute;
+    top: 20px;
+    transition: all .3s ease;
+}
+
+
+.contact form label input:focus ~ p,
+.contact form label input:user-valid ~ p,
+.contact form label textarea:user-valid ~ p,
+.contact form label textarea:focus ~ p {
+    /* bottom: 35px; */
+    top: -25px;
+    bottom: auto;
+    font-size: 1.4rem;
+}
+
+.contact form label input:focus{
+    border-bottom: 1px solid var(--priC);
 }

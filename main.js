@@ -8,25 +8,25 @@ function rotateToMouse(e) {
   const topY = mouseY - bounds.y;
   const center = {
     x: leftX - bounds.width / 2,
-    y: topY - bounds.height / 2 
+    y: topY - bounds.height / 2
   }
-  const distance = Math.sqrt(center.x**4 + center.y**4);
-  
+  const distance = Math.sqrt(center.x ** 4 + center.y ** 4);
+
   $card.style.transform = `
     scale3d(1.07, 1.07, 1.07)
     rotate3d(
       ${center.y / 100},
       ${-center.x / 100},
       0,
-      ${Math.log(distance)* 2}deg
+      ${Math.log(distance) * 2}deg
     )
   `;
-  
+
   $card.querySelector('.glow').style.backgroundImage = `
     radial-gradient(
       circle at
-      ${center.x * 2 + bounds.width/2}px
-      ${center.y * 2 + bounds.height/2}px,
+      ${center.x * 2 + bounds.width / 2}px
+      ${center.y * 2 + bounds.height / 2}px,
       #ffffff55,
       #00000055
     )
@@ -45,7 +45,7 @@ $card.addEventListener('mouseleave', () => {
 });
 
 // When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction()};
+window.onscroll = function () { myFunction() };
 
 function myFunction() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -58,31 +58,74 @@ document.addEventListener("DOMContentLoaded", function () {
   const loader = document.getElementById("loader-wrapper");
 
   window.addEventListener("load", function () {
-      // Hide the loader after the page is fully loaded
-      loader.style.display = "none";
+    // Hide the loader after the page is fully loaded
+    loader.style.display = "none";
   });
 });
 
-function gotopage(url){
-  
+function gotopage(url) {
   window.location.href = url;
 }
 
 var i = 0;
-    var txt = ", I always love what i do. I'm dedicated of my work ever. Be addictive to the job";
-    var speed = 50;
+var txt = ", I always love what i do. I'm dedicated of my work ever. Be addictive to the job";
+var speed = 50;
 
-    function typeWriter() {
-      if (i < txt.length) {
-        document.getElementById("tw").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-      }
-    }
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("tw").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
 
-    // Trigger typeWriter when the page is loaded
-    window.onload = function () {
-      setTimeout(function () {
-        typeWriter();
-      }, 500); // 1000 milliseconds (1 second) delay
-    };
+// Trigger typeWriter when the page is loaded
+window.onload = function () {
+  setTimeout(function () {
+    typeWriter();
+  }, 500); // 1000 milliseconds (1 second) delay
+};
+
+const texts = [
+  window.innerWidth>600?"Backend Developer":"Backend Dev",
+  "Freelancer",
+  "AI Enthusiast",
+  "AI/ML Engineer",
+];
+
+var textWrapper = document.querySelector('.ml12');
+var previousIndex = -1;
+
+function updateText() {
+  let newIndex;
+  do {
+    newIndex = Math.floor(Math.random() * texts.length);
+  } while (newIndex === previousIndex);
+
+  previousIndex = newIndex;
+  textWrapper.textContent = texts[newIndex];
+  textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+  anime.timeline({ loop: false }) // Not looping this animation as it's triggered by setInterval
+    .add({
+      targets: '.ml12 .letter',
+      translateX: [40, 0],
+      translateZ: 0,
+      opacity: [0, 1],
+      easing: "easeOutExpo",
+      duration: 1200,
+      delay: (el, i) => 500 + 30 * i
+    }).add({
+      targets: '.ml12 .letter',
+      translateX: [0, -30],
+      opacity: [1, 0],
+      easing: "easeInExpo",
+      duration: 1100,
+      delay: (el, i) => 100 + 30 * i
+    });
+}
+
+updateText(); // Initialize the first text and animation
+
+// Update text every 4 seconds (to match the animation loop duration)
+setInterval(updateText, 4000);

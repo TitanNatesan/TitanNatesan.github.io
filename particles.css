@@ -14,6 +14,20 @@
     background-position: 50% 50%;
     z-index: -1;
     pointer-events: none;
+    filter: blur(100px) brightness(.7) saturate(2);
+  }
+
+  #particles-js2 {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -2;
+    pointer-events: none;
+    /* opacity: .8; */
+    filter: brightness(1.5);
   }
 
   /* ---- stats.js ---- */

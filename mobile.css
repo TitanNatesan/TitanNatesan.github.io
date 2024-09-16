@@ -6,8 +6,13 @@
 
     .main-container-left-fixed {
         width: 100%;
-        margin: auto;
+        min-width: 400px;
+        height: 100vh;
+        margin: 0;
         position: relative;
+        display: flex;
+        padding: auto;
+        pointer-events: auto;
     }
 
     .main-content-left-fixed {
@@ -63,6 +68,7 @@
         padding: 0;
         margin: 0;
     }
+
     .r .intro {
         padding: 0;
         margin: 0;
@@ -115,7 +121,7 @@
     }
 
     .r .ser .card {
-        padding: 2% 8%;
+        padding: 2%;
         border-radius: 10px;
         margin: 5% auto;
     }
@@ -128,8 +134,21 @@
     }
 
     .r .ser .card p {
-        width: 100%;
+        width: 70%;
         font-size: 85%;
+    }
+
+    .r .ser .card span {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 60px;
+        font-variation-settings:
+            'FILL' 0,
+            'wght' 100,
+            'GRAD' 0,
+            'opsz' 24
     }
 
     .r .skill .cont .icon {
@@ -147,17 +166,59 @@
         font-size: 100%;
     }
 
-    .r .project .cont .pro {
-        width: 85%;
+    .r .project .cont {
+        margin: auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
     }
 
-    .contact-area {
+    .r .project .cont .pro {
+        width: 85%;
+        margin: auto;
+    }
+
+    .r .project .cont .pro video {
+        border-radius: 5px;
+    }
+
+    .r .project .cont .pro::after {
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    .r .project .cont .pro img {
+        border-radius: 5px;
+    }
+
+    .r .project .cont .pro h3 {
+        opacity: 1;
+        font-size: 1rem;
+    }
+
+    .contact {
         padding-bottom: 50px;
         margin: auto 5%;
     }
 
-    .snavigate{
+    .snavigate {
         display: none;
     }
+
+.contact form label p {
+    font-size: 28px;
+}
+
+.contact form input[type='submit']{
+    width: 60%;
+    padding: 6px;
+    border-radius: 200px;
+    font-size: 1.6rem;
+    font-weight: 900;
+    border: none;
+    background-color: var(--priC);
+    transition: all 0.5s ease;
+}
 
 }

@@ -1,28 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>test</title>
-  <link rel="stylesheet" href="main.css">
-
-  <script>
-    
-
-  </script>
-</head>
-
+<html>
 <body>
-  <div class="r">
-    <div class="intro">
-      <div class="hair">Introduction</div>
-      <pre>I'm <b>Titan</b>
-Designer, FullStack
-and AI Developer</pre>
-      <p id="demo">I'm Titan <b>Natesan</b></p>
-    </div>
-  </div>
-</body>
 
+<h1>Typewriter</h1>
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txtArray = [
+  'Lorem ipsum dummy text blabla.',
+  'Another piece of text to display.',
+  'And yet another text for good measure.'
+];
+var speed = 50;
+var currentTextIndex = 0;
+
+function typeWriter() {
+  if (i < txtArray[currentTextIndex].length) {
+    document.getElementById("demo").innerHTML += txtArray[currentTextIndex].charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  } else {
+    // Move to the next text after a short delay
+    setTimeout(function() {
+      i = 0; // Reset character index
+      document.getElementById("demo").innerHTML = ''; // Clear existing text
+      currentTextIndex++; // Move to next text in array
+      if (currentTextIndex >= txtArray.length) {
+        currentTextIndex = 0; // Loop back to the first text
+      }
+      typeWriter(); // Start typing the next text
+    }, 1000); // Delay before starting next text
+  }
+}
+
+// Start typing effect when the page loads
+window.onload = function() {
+  typeWriter();
+};
+</script>
+
+</body>
 </html>

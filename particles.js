@@ -994,13 +994,13 @@ var pJS = function(tag_id, params){
         }
 
         // bang - slow motion mode
-        // if(!pJS.tmp.repulse_finish){
-        //   if(d <= repulseRadius){
-        //     process();
-        //   }
-        // }else{
-        //   process();
-        // }
+        if(!pJS.tmp.repulse_finish){
+          if(d <= repulseRadius){
+            process();
+          }
+        }else{
+          process();
+        }
         
 
       }else{
@@ -1545,68 +1545,78 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
 var ptrl = {
   "particles": {
     "number": {
-      "value": 250,
+      "value": 20,
       "density": {
-        "enable": false,
+        "enable": true,
         "value_area": 800
       }
     },
     "color": {
-      "value": "#ffffff"
+      "value": [
+        "#f2f2f2", "#f5f5f5", "#fafafa",
+        "#1dc47a", "#4fd58d", "#7fe0a0",
+        "#00b46f", "#009a5e", "#007d4e", "#005f3d",
+        "#ffffff", "#e6e6e6", "#cccccc", "#b3b3b3",
+        "#0099ff", "#33aaff", "#66bbff", "#99ccff",
+        "#00741d", "#2c9c2e", "#4fbf41", "#6fdc54",
+        "#c3ffb6", "#a3e8a0", "#7ccb8c", "#58a778",
+        "#1ab64f", "#1ab64f", "#1ab64f", "#1ab64f", "#1ab64f",
+      ]      
+
     },
     "shape": {
       "type": "circle",
       "stroke": {
-        "width": 1,
+        "width": 0 ,
         "color": "#000"
       },
       "polygon": {
         "nb_sides": 6
       },
       "image": {
-        "width": 100,
+        "width":100,
         "height": 100
       }
     },
     "opacity": {
-      "value": 0.8,
+      "value": .8,
       "random": true,
       "anim": {
-        "enable": true,
-        "speed": 10,
-        "opacity_min": 0,
+        "enable": false,
+        "speed": .1,
+        "opacity_min": 0.5,
         "sync": false
       }
     },
     "size": {
-      "value": 2,
+      "value": 150,
       "random": true,
       "anim": {
         "enable": true,
-        "speed": 10,
-        "size_min": 0,
-        "sync": false
+        "speed": 100,
+        "size_min": 10,
+        "sync": false,
       }
     },
     "line_linked": {
-      "enable": true,
-      "distance": 150,
-      "color": "#ffffff",
-      "opacity": 0.5,
-      "width": 0.5
+      "enable": false,
+      "distance": 200,
+      "color": "#fff",
+      "opacity": 1,
+      "width": 10
     },
     "move": {
       "enable": true,
-      "speed": 5,
-      "direction": "none",
-      "random": true,
+      "speed": -1,
+      "direction": "bottom",
+      "random": false,
       "straight": false,
-      "out_mode": "bounce",
-      "bounce": true,
+      "out_mode": "out",
+      "bounce": false,
       "attract": {
         "enable": true,
-        "rotateX": 1000,
-        "rotateY": 1000
+        "rotateX": 100,
+        "rotateY": 100
       }
     }
   },
@@ -1615,10 +1625,10 @@ var ptrl = {
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "grab"
+        "mode": "repulse"
       },
       "onclick": {
-        "enable": true,
+        "enable": false,
         "mode": "push"
       },
       "resize": true
@@ -1631,34 +1641,148 @@ var ptrl = {
         }
       },
       "bubble": {
-        "distance": 400,
-        "size": 40,
+        "distance": 200,
+        "size": 100,
         "duration": 2,
         "opacity": 8,
-        "speed": 3
+        "speed": 5
       },
       "repulse": {
-        "distance": 200,
-        "duration": 0.4
+        "distance": 100,
+        "duration": 5
       },
       "push": {
-        "particles_nb": 5
+        "particles_nb": 1
       },
       "remove": {
         "particles_nb": 2
       }
     }
   },
-  "retina_detect": false
+  "retina_detect": true
 }
 
+var ptrl2 = {
+  "particles": {
+    "number": {
+      "value": 150,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 3,
+        "color": "#000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 1,
+      "random": false,
+      "anim": {
+        "enable": true,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 2,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 1,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": -2,
+      "direction": "top-left",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": true,
+        "rotateX": 200,
+        "rotateY": 100
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "window",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": [ "repulse"]
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 200,
+        "line_linked": {
+          "opacity": 0
+        }
+      },
+      "bubble": {
+        "distance": 300,
+        "size": 30,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 100,
+        "duration": 0.8
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+}
+
+// var ptrl3 = 
+
 function leveler(){
-  ptrl.particles.number.value = window.innerWidth>600 ? 250:60;
+  ptrl.particles.number.value = window.innerWidth>600 ? 100:40;
 }
 
 leveler();
 
 particlesJS("particles-js", ptrl);
+particlesJS("particles-js2", ptrl2);
 
 
 /* ---- stats.js config ---- */
