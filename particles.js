@@ -1718,7 +1718,7 @@ var ptrl2 = {
     },
     "move": {
       "enable": true,
-      "speed": -2,
+      "speed": -1 ,
       "direction": "top-left",
       "random": true,
       "straight": false,
