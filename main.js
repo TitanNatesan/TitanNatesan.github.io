@@ -68,12 +68,12 @@ function gotopage(url) {
 }
 
 var i = 0;
-var txt = ", I always love what i do. I'm dedicated of my work ever. Be addictive to the job";
+var txt = ", also known as <b>Titan</b> Natesan or Titan Dev, a Full Stack <b>Developer</b> based in Tiruppur. As an <b>AI enthusiast</b>, I specialize in developing robust <b>web applications</b> using Python, <b>Django</b>, and modern technologies. If you're looking for Titan the developer to craft innovative solutions, you’re in the right place!!";
 var speed = 50;
 
 function typeWriter() {
   if (i < txt.length) {
-    document.getElementById("tw").innerHTML += txt.charAt(i);
+    document.getElementById("tw").innerHTML = 'Hi, I’m <b>Natesan K</b>' + txt.substring(0, i);
     i++;
     setTimeout(typeWriter, speed);
   }
