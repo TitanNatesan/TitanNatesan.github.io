@@ -14,7 +14,7 @@
     background-position: 50% 50%;
     z-index: -1;
     pointer-events: none;
-    filter: blur(100px) brightness(.7) saturate(2);
+    filter: blur(100px) brightness(.5) saturate(2);
   }
 
   #particles-js2 {
@@ -27,7 +27,7 @@
     z-index: -2;
     pointer-events: none;
     /* opacity: .8; */
-    filter: brightness(1.5);
+    /* filter: brightness(2); */
   }
 
   /* ---- stats.js ---- */

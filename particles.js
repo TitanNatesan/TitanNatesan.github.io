@@ -1545,21 +1545,21 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
 var ptrl = {
   "particles": {
     "number": {
-      "value": 20,
+      "value": 50,
       "density": {
-        "enable": true,
-        "value_area": 800
+        "enable": false,
+        "value_area": 8000
       }
     },
     "color": {
       "value": [
         "#f2f2f2", "#f5f5f5", "#fafafa",
         "#1dc47a", "#4fd58d", "#7fe0a0",
-        "#00b46f", "#009a5e", "#007d4e", "#005f3d",
-        "#ffffff", "#e6e6e6", "#cccccc", "#b3b3b3",
+        // "#00b46f", "#009a5e", "#007d4e", "#005f3d",
+        // "#ffffff", "#e6e6e6", "#cccccc", "#b3b3b3",
         "#0099ff", "#33aaff", "#66bbff", "#99ccff",
-        "#00741d", "#2c9c2e", "#4fbf41", "#6fdc54",
-        "#c3ffb6", "#a3e8a0", "#7ccb8c", "#58a778",
+        // "#00741d", "#2c9c2e", "#4fbf41", "#6fdc54",
+        // "#c3ffb6", "#a3e8a0", "#7ccb8c", "#58a778",
         "#1ab64f", "#1ab64f", "#1ab64f", "#1ab64f", "#1ab64f",
       ]      
 
@@ -1607,7 +1607,7 @@ var ptrl = {
     },
     "move": {
       "enable": true,
-      "speed": -1,
+      "speed": -5,
       "direction": "bottom",
       "random": false,
       "straight": false,
